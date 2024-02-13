@@ -13,10 +13,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-1"
-  app: "react-travis-cicd"
-  env: "react-travis-cicd-env"
+  app: "travis-react"
+  env: "travis-react-env"
   bucket_name: "elasticbeanstalk-ap-southeast-1-471112896660"
-  bucket_path: "react-travis-cicd"
+  bucket_path: "travis-react"
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
